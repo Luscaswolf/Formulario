@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Fomulario.css" media="screen">
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    <div>
+        <h1 id="Titulo">Cadastro De Experiencia Dev</h1>
+        <p id="subtitulo">Complete suas informações</p>
+        <br>
+    </div>
+    
+    <form>
+        <fieldset class="grupo">
+        <div>
+           <label for="nome"><strong>Nome</strong></label>
+            <input type="text" nome="nome" id="nome" required>
+        </div>
+
+        <div class="campo">
+            <label for="sobrenome"><strong>Sobrenome</strong></label>
+            <input type="text" nome="sobrenome" id="sobrenome" required>
+        </div>    
+        </fieldset>
+        <div>
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" nome="email" id="email" required>
+        </div>
+
+        <div class="campo">
+            <label><strong>Qual seu nivel na programação?</strong></label>
+            <label><br>
+                <input type="radio" nome="devweb" value="Iniciante" checked>Iniciante
+            </label>
+            <label>
+                <input type="radio" nome="devweb" value="Estudante intermediario">Esdudante intermediario
+            </label>
+            <label>
+                <input type="radio" nome="divweb" value="Especialista">Especialista 
+            </label>
+        </div>
+        <div class="campo">
+            <label for="Linguagem"><strong>Qual sua melhor linguagem?</strong></label>
+            <select id="Linguagem">
+                <option selected disabled value="">Escolha</option>
+                <option>JavaScript</option>
+                <option>Java</option>
+                <option>Python</option>
+                <option>Swift</option>
+                <option>PHP</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id=check>
+                <label><strong>Qual area você tem mais interesse de desenvolver</strong></label> <br>
+                <input type="checkbox" name="Tecnologia1" id="Tecnologia1" value="Frontend">
+                <label for="Tecnologia1">Frontend</label>
+                <input type="checkbox" name="Tecnologia2" id="Tecnologia2" value="Backend">
+                <label for="Tecnologia2">Backend</label>
+                <input type="checkbox" name="Tecnologia3" id="Tecnologia3" value="Banco de dados">
+                <label for="Tecnologia3">Banco de dados</label>
+                <input type="checkbox" name="Tecnologia4" id="Tecnologia4" value="Fullstack">
+                <label for="Tecnologia4">Fullstack</label>
+                <input type="checkbox" name="Tecnologia5" id="Tecnologia5" value="Jogos">
+                <label for="Tecnologia5">Jogos</label>
+            </div>
+        </fieldset>
+
+        <div class="grupo">
+            <label><strong>Me conte sobre algum projeto pessoal seu:</strong></label> <br>
+            <textarea rows="10" style="width: 26em;" id="Eu" nome="Eu"></textarea>
+        </div>
+
+        <button class="Botão" type="submit">Enviar</button>
+
+    </form>
+
+</body>
+</html>
